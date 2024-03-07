@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/public/imgs/bootstrap-logo.ico">
+    <link rel="stylesheet" href="/public/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/public/styles/style.css">
+    <link rel="stylesheet" href="/public/styles/search-cars/search-cars.css">
+    <title>Buscar Autos</title>
+</head>
+
+<body class=" bg-light ">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid justify-content-start ">
+            <div class="col">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarToggleComponent" aria-controls="navbarToggleComponent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navbar el contenido solo se muestra cuando la pantalla es grande mayor igual que LG-->
+                <div class="d-none d-lg-flex">
+                    <a class="navbar-brand" href="/index.html">Auto Mundo</a>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page"
+                                href="/sections/search-cars/search-cars.html">Buscar Autos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/sections/contact-us/contact-us.html">Contáctanos</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Navbar el contenido solo se muestra cuando son dispositos pequeños menores que LG -->
+                <div class="d-block d-lg-none pt-2">
+                    <div class="collapse " id="navbarToggleComponent">
+                        <a class="navbar-brand" href="/index.html">Auto Mundo</a>
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page"
+                                    href="/sections/search-cars/search-cars.html">Buscar Autos</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="/sections/contact-us/contact-us.html">Contáctanos</a>
+                            </li>
+                            <div class="py-2 border-bottom">
+                                <button type="button" class="btn btn-primary position-relative">
+                                    Notificaciones
+                                    <span
+                                        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                        5+
+                                        <span class="visually-hidden">solicitudes de compra sin leer</span>
+                                    </span>
+                                </button>
+                            </div>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Configuración</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/index.html">Cerrar sesión</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Columna con informacion del perfil del usuario -->
+            <div class="col-3 d-none d-lg-block pt-3">
+                <div class="row ">
+                    <div class="col">
+                        <button type="button" class="btn btn-primary position-relative">
+                            Notificaciones
+                            <span
+                                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                5+
+                                <span class="visually-hidden">solicitudes de compra sin leer</span>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="col">
+                        <div>
+                            <div class="dropdown">
+                                <img src="/public/imgs/profile.jpg"
+                                    class="border  border-3  rounded-circle cursor-pointer dropdown "
+                                    id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"
+                                    alt="profile phote" width="45" height="45">
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#">Configuración</a></li>
+                                    <li><a class="dropdown-item" href="/index.html">Cerrar sesión</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </nav>
+
+    <!-- Seccion donde el usuario ve en que parte de x pais esta buscando autos -->
+    <div class="container-fluid justify-content-start pt-3">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">El Salvador</a></li>
+                <li class="breadcrumb-item active" aria-current="page">San Salvador</li>
+            </ol>
+        </nav>
+    </div>
+
+    <div class="container-fluid  pt-4  brands-container">
+        <div class="row justify-content-center" id="brandsRowContainer">
+            <div class="col-6 col-lg-4 brand-item d-flex flex-column justify-content-between  text-center">
+                <div class=" rounded-circle d-flex  justify-content-center "><img class="img-fluid" height="100"
+                        width="100" src="/public/imgs/brand-logos/toyota.png" alt="toyota">
+                </div>
+                <span>Toyota</span>
+            </div>
+            <div class="col-6 col-lg-4 brand-item d-flex flex-column justify-content-between  text-center">
+                <div class=" rounded-circle"><img class="img-fluid" height="100" width="100"
+                        src="/public/imgs/brand-logos/nissan.png" alt="nissan">
+                </div>
+                <span>Nissan</span>
+            </div>
+
+            <div class="col-6 col-lg-4 brand-item d-flex flex-column justify-content-between  text-center">
+                <div class=" rounded-circle"><img class="img-fluid" height="100" width="100"
+                        src="/public/imgs/brand-logos/mitsubishi.png" alt="mitsubishi">
+                </div>
+                <span>Mitsubishi</span>
+            </div>
+            <div class="col-6 col-lg-4 brand-item d-flex flex-column justify-content-between  text-center">
+                <div class=" rounded-circle"><img class="img-fluid" height="100" width="100"
+                        src="/public/imgs/brand-logos/hyundai.png" alt="hyundai.png">
+                </div>
+                <span>Hyundai</span>
+            </div>
+
+            <div class="col-6 col-lg-4 brand-item d-flex flex-column justify-content-between  text-center">
+                <div class=" rounded-circle"><img class="img-fluid" height="100" width="100"
+                        src="/public/imgs/brand-logos/honda.png" alt="honda.png">
+                </div>
+                <span>Honda</span>
+            </div>
+            <div class="col-6 col-lg-4 brand-item d-flex flex-column justify-content-between  text-center">
+                <div class=" rounded-circle"><img class="img-fluid" height="100" width="100"
+                        src="/public/imgs/brand-logos/ford.png" alt="ford.png">
+                </div>
+                <span>Ford</span>
+            </div>
+        </div>
+    </div>
+    <script src="/public/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <script src="/public/js/search-cars/search-cars.js"></script>
+</body>
+
+</html>

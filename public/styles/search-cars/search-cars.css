@@ -1,0 +1,20 @@
+.brand-item{
+    width: 120px;
+    height: 120px;
+}
+.brand-item span{
+    font-weight: 700;
+}
+
+.brand-item-selected{
+    background-color: rgba(0, 0, 0, 0.233);
+    padding: 2px;
+}
+.brand-item:hover{
+    scale: 1.2;
+    transition: all ease-in 50ms;
+}
+.brands-container{
+    background-color: rgba(128, 128, 128, 0.096);
+    padding-bottom: 30px;
+}
