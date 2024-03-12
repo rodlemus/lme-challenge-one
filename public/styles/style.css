@@ -14,24 +14,3 @@ body{
 .cursor-pointer{
     cursor: pointer;
 }
-
-.hide{
-    display: none;
-    visibility: hidden;
-    transition: all ease-in-out 300ms;
-}
-
-.show{
-    display: inline;
-    visibility: visible;
-    transition: all ease-in-out 300ms;
-}
-
-.alert-absolute{
-    position: absolute;
-    top: 20%;
-    left: 0; 
-  right: 0; 
-  margin-left: auto; 
-  margin-right: auto; 
-}

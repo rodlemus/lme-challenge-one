@@ -43,21 +43,17 @@ brandsItems.forEach((brandElement) => {
 });
 
 // Alerts del boton guardar auto
-
-const hiddenAlertsElements = Array.from(
-  document.getElementsByClassName("alert-absolute")
-);
+const toastElement = document.getElementById("liveToast");
+const toastComponent = new bootstrap.Toast(toastElement, {
+  autoHide: true,
+  delay: 2000,
+});
 const saveCarButtonsElements =
   document.getElementsByClassName("saveCar-button");
 
 Array.from(saveCarButtonsElements).forEach((saveCarButton, index) => {
   saveCarButton.addEventListener("click", () => {
-    const alertFromCurrentCard = hiddenAlertsElements[index];
-    alertFromCurrentCard.classList.remove("hide");
-    alertFromCurrentCard.classList.add("show");
-    setTimeout(() => {
-      alertFromCurrentCard.classList.remove("show");
-      alertFromCurrentCard.classList.add("hide");
-    }, 700);
+    console.log("show toast");
+    toastComponent.show();
   });
 });
