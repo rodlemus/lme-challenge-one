@@ -94,3 +94,24 @@ const { brand, model } = new Proxy(
 );
 
 console.log(brand, model, brandsData[brand][model]);
+const carouselSources = brandsData[brand][model];
+
+const generateCarouselElement = (model, imageSrc) => {
+  const divCarousel = document.createElement("div");
+  divCarousel.classList.add("carousel-item");
+
+  const img = document.createElement("img");
+  img.setAttribute("src", imageSrc);
+  img.setAttribute("alt", model);
+  img.classList.add("d-block", "w-100", "img-fluid");
+
+  divCarousel.appendChild(img);
+
+  return divCarousel;
+};
+
+carouselSources.forEach((imgSrc) => {
+  console.log(imgSrc);
+  const carouselItem = generateCarouselElement(model, imgSrc);
+  carouselContainerElement.appendChild(carouselItem);
+});
