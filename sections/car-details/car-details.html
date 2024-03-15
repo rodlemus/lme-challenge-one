@@ -7,8 +7,9 @@
     <link rel="shortcut icon" href="/public/imgs/bootstrap-logo.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/public/styles/style.css">
-    <link rel="stylesheet" href="/public/styles/search-cars/search-cars.css">
+    <link rel="stylesheet" href="/public/styles/carDetails/carDetails.css">
     <title>Buscar Autos</title>
 </head>
 
@@ -101,7 +102,7 @@
         </div>
         </div>
     </nav>
-    <div class="container-fluid">
+    <div class="container-fluid px-5">
         <div class="row pt-5">
             <div class="col-3 col-lg-5">
                 <a class="btn btn-secondary" href="/sections/search-cars/search-cars.html"><svg
@@ -115,13 +116,14 @@
                 <span class="fs-3 ">Descripción General</span>
             </div>
         </div>
-        <div class="row pt-5">
+    </div>
+    <div class="container py-5">
+
+        <div class="row">
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators" id="carouselIndicatorContainer">
-
                 </div>
                 <div class="carousel-inner" id="carouselContainer">
-
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
                     data-bs-slide="prev">
@@ -132,6 +134,49 @@
                     data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="row py-5 border-bottom border-2 ">
+            <div class="d-flex justify-content-center flex-column"><span class="h3" id="carTitle"></span><span
+                    class="text-muted h4">Full extras, en
+                    execelentes condiciones.</span>
+                <div class="d-flex gap-2 bg-dark  text-white starsContainer">
+                    <div>
+                        <span class="fa fa-star star-checked"></span>
+                        <span class="fa fa-star star-checked"></span>
+                        <span class="fa fa-star star-checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                    <div><ins><span id="viewsTitle"></span></ins></div>
+                </div>
+            </div>
+        </div>
+        <div class="row py-4">
+            <div class="d-flex justify-content-center flex-column"><span class="h4">Descripción</span>
+                <p id="carDescription"></p>
+            </div>
+        </div>
+        <div class="row d-flex flex-wrap  justify-content-center">
+            <div class="col-6 ">
+                <button class="btn btn-outline-success border-2  d-flex justify-content-center w-100 "><svg width="16"
+                        height="16" fill="currentColor" viewBox="0 0 16 16"
+                        style="margin-right: 10px; margin-top: 6px;">
+                        <path
+                            d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z" />
+                    </svg><span>Comprar</span></button>
+            </div>
+            <div class="col-6 ">
+                <button class="btn btn-primary w-100 d-flex justify-content-center saveCar-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        viewBox="0 0 16 16" style="margin-top: 6px; margin-right: 10px">
+                        <path
+                            d="M7.84 4.1a.178.178 0 0 1 .32 0l.634 1.285a.18.18 0 0 0 .134.098l1.42.206c.145.021.204.2.098.303L9.42 6.993a.18.18 0 0 0-.051.158l.242 1.414a.178.178 0 0 1-.258.187l-1.27-.668a.18.18 0 0 0-.165 0l-1.27.668a.178.178 0 0 1-.257-.187l.242-1.414a.18.18 0 0 0-.05-.158l-1.03-1.001a.178.178 0 0 1 .098-.303l1.42-.206a.18.18 0 0 0 .134-.098z" />
+                        <path
+                            d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z" />
+                    </svg><span>Guardar</span>
                 </button>
             </div>
         </div>
