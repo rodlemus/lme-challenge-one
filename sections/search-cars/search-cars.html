@@ -2,20 +2,20 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/public/imgs/bootstrap-logo.ico">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/public/imgs/bootstrap-logo.ico" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="/public/styles/style.css">
-    <link rel="stylesheet" href="/public/styles/search-cars/search-cars.css">
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/public/styles/style.css" />
+    <link rel="stylesheet" href="/public/styles/search-cars/search-cars.css" />
     <title>Buscar Autos</title>
 </head>
 
-<body class=" bg-light ">
+<body class="bg-custom">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid justify-content-start ">
+    <nav class="navbar navbar-expand-lg navbar-light bg-custom">
+        <div class="container-fluid justify-content-start">
             <div class="col">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarToggleComponent" aria-controls="navbarToggleComponent" aria-expanded="false"
@@ -39,7 +39,7 @@
 
                 <!-- Navbar el contenido solo se muestra cuando son dispositos pequeños menores que LG -->
                 <div class="d-block d-lg-none pt-2">
-                    <div class="collapse " id="navbarToggleComponent">
+                    <div class="collapse" id="navbarToggleComponent">
                         <a class="navbar-brand" href="/index.html">Auto Mundo</a>
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
@@ -52,7 +52,7 @@
                             </li>
                             <div class="py-2 border-bottom">
                                 <span type="span"
-                                    class="position-relative bg-dark bg-gradient  rounded-2 text-white p-1 ">
+                                    class="position-relative bg-dark bg-gradient rounded-2 text-white p-1">
                                     Notificaciones
                                     <span class="badge bg-danger">4</span>
                                 </span>
@@ -66,12 +66,11 @@
                         </ul>
                     </div>
                 </div>
-
             </div>
 
             <!-- Columna con informacion del perfil del usuario -->
             <div class="col-3 d-none d-lg-block pt-3">
-                <div class="row ">
+                <div class="row">
                     <div class="col">
                         <span type="span" class="btn btn-primary position-relative">
                             Notificaciones
@@ -86,12 +85,14 @@
                         <div>
                             <div class="dropdown">
                                 <img src="/public/imgs/profile.jpg"
-                                    class="border  border-3  rounded-circle cursor-pointer dropdown "
+                                    class="border border-3 rounded-circle cursor-pointer dropdown"
                                     id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"
-                                    alt="profile phote" width="45" height="45">
+                                    alt="profile phote" width="45" height="45" />
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                                     <li><a class="dropdown-item" href="#">Configuración</a></li>
-                                    <li><a class="dropdown-item" href="/index.html">Cerrar sesión</a></li>
+                                    <li>
+                                        <a class="dropdown-item" href="/index.html">Cerrar sesión</a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -99,60 +100,449 @@
                 </div>
             </div>
         </div>
-        </div>
     </nav>
 
-    <!-- Seccion donde el usuario ve en que parte de x pais esta buscando autos -->
-    <div class="container-fluid justify-content-start pt-3">
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">El Salvador</a></li>
-                <li class="breadcrumb-item active" aria-current="page">San Salvador</li>
-            </ol>
-        </nav>
-    </div>
-
-    <div class="container-fluid pt-4  brands-container">
+    <div class="container-fluid pt-2 brands-container bg-custom">
         <div class="row p-2 justify-content-center" id="brandsRowContainer">
-            <div class="col-2 brand-item d-flex flex-column justify-content-between  text-center">
-                <div class=" rounded-circle d-flex  justify-content-center "><img class="img-fluid" height="90"
-                        width="90" src="/public/imgs/brand-logos/toyota.png" alt="toyota">
+            <div class="col-2 brand-item d-flex flex-column justify-content-between text-center">
+                <div class="rounded-circle d-flex justify-content-center">
+                    <img class="img-fluid" src="/public/imgs/brand-logos/toyota.png" alt="toyota" />
                 </div>
                 <span>Toyota</span>
             </div>
-            <div class="col-2 brand-item d-flex flex-column justify-content-between  text-center">
-                <div class=" rounded-circle"><img class="img-fluid" height="90" width="90"
-                        src="/public/imgs/brand-logos/nissan.png" alt="nissan">
+            <div class="col-2 brand-item d-flex flex-column justify-content-between text-center">
+                <div class="rounded-circle">
+                    <img class="img-fluid" src="/public/imgs/brand-logos/nissan.png" alt="nissan" />
                 </div>
                 <span>Nissan</span>
             </div>
-            <div class="col-2 brand-item d-flex flex-column justify-content-between  text-center">
-                <div class=" rounded-circle"><img class="img-fluid" height="90" width="90"
-                        src="/public/imgs/brand-logos/mitsubishi.png" alt="mitsubishi">
+            <div class="col-2 brand-item d-flex flex-column justify-content-between text-center">
+                <div class="rounded-circle">
+                    <img class="img-fluid" src="/public/imgs/brand-logos/mitsubishi.png" alt="mitsubishi" />
                 </div>
                 <span>Mitsubishi</span>
             </div>
-            <div class="col-2 brand-item d-flex flex-column justify-content-between  text-center">
-                <div class=" rounded-circle"><img class="img-fluid" height="90" width="90"
-                        src="/public/imgs/brand-logos/hyundai.png" alt="hyundai.png">
+            <div class="col-2 brand-item d-flex flex-column justify-content-between text-center">
+                <div class="rounded-circle">
+                    <img class="img-fluid" src="/public/imgs/brand-logos/hyundai.png" alt="hyundai.png" />
                 </div>
                 <span>Hyundai</span>
             </div>
 
-            <div class="col-2 brand-item d-flex flex-column justify-content-between  text-center">
-                <div class=" rounded-circle"><img class="img-fluid" height="90" width="90"
-                        src="/public/imgs/brand-logos/honda.png" alt="honda.png">
+            <div class="col-2 brand-item d-flex flex-column justify-content-between text-center">
+                <div class="rounded-circle">
+                    <img class="img-fluid" src="/public/imgs/brand-logos/honda.png" alt="honda.png" />
                 </div>
                 <span>Honda</span>
             </div>
-            <div class="col-2 brand-item d-flex flex-column justify-content-between  text-center">
-                <div class=" rounded-circle"><img class="img-fluid" height="90" width="90"
-                        src="/public/imgs/brand-logos/ford.png" alt="ford.png">
+            <div class="col-2 brand-item d-flex flex-column justify-content-between text-center">
+                <div class="rounded-circle">
+                    <img class="img-fluid" height="90" src="/public/imgs/brand-logos/ford.png" alt="ford.png" />
                 </div>
                 <span>Ford</span>
             </div>
         </div>
     </div>
+
+    <!-- autos en venta -->
+    <div class="container-fluid featured-adds-container pb-4">
+        <div class="row pt-4">
+            <div class="col">
+                <span class="bg-warning bg-gradient h4 pb-2"><span class="badge text-dark"> Anuncios
+                        Destacados</span></span>
+            </div>
+        </div>
+        <div class="row pt-4">
+            <!-- Seccion donde el usuario ve en que parte de x pais esta buscando autos -->
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">El Salvador</a></li>
+                    <li class="breadcrumb-item active"><a href="#">San Salvador</a></li>
+                    <li class="breadcrumb-item active text-muted" aria-current="page">
+                        Ciudad Delgado
+                    </li>
+                </ol>
+            </nav>
+        </div>
+        <div class="row justify-content-center g-2">
+            <div class="col-6 col-md-4 col-lg-2 d-flex justify-content-center">
+                <div class="card featured-announcement-card border border-black" style="width: 20rem">
+                    <img src="/public/imgs/cars-photos-db/honda/civic/civic-bg.png" class="card-img-top img-fluid"
+                        alt="..." />
+                    <div class="card-body d-flex flex-column justify-content-around">
+                        <h5 class="card-title">Honda Civic / 2008</h5>
+                        <h6 class="card-subtitle mb-2 text-success">Precio: $6,599</h6>
+                        <p class="card-text">
+                            Some quick example text to build on the card title and make up
+                            the bulk of the card's content.
+                        </p>
+                        <div class="container">
+                            <div class="row g-2">
+                                <div class="col">
+                                    <a class="btn btn-primary w-100 d-flex justify-content-center"
+                                        href="/sections/car-details/car-details.html?brand=honda&model=civic&year=2008"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" style="margin-top: 6px; margin-right: 10px"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                            <path
+                                                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4" />
+                                        </svg><span>Ver</span></a>
+                                </div>
+                                <div class="col">
+                                    <button
+                                        class="btn btn-secondary w-100 d-flex justify-content-center saveCar-button">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" viewBox="0 0 16 16"
+                                            style="margin-top: 6px; margin-right: 10px">
+                                            <path
+                                                d="M7.84 4.1a.178.178 0 0 1 .32 0l.634 1.285a.18.18 0 0 0 .134.098l1.42.206c.145.021.204.2.098.303L9.42 6.993a.18.18 0 0 0-.051.158l.242 1.414a.178.178 0 0 1-.258.187l-1.27-.668a.18.18 0 0 0-.165 0l-1.27.668a.178.178 0 0 1-.257-.187l.242-1.414a.18.18 0 0 0-.05-.158l-1.03-1.001a.178.178 0 0 1 .098-.303l1.42-.206a.18.18 0 0 0 .134-.098z" />
+                                            <path
+                                                d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z" />
+                                        </svg><span>Guardar</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 d-flex justify-content-center">
+                <div class="card featured-announcement-card border border-black" style="width: 20rem">
+                    <img src="/public/imgs/cars-photos-db/toyota/hilux/hilux-bg.jpg" class="card-img-top img-fluid"
+                        alt="..." />
+                    <div class="card-body d-flex flex-column justify-content-around">
+                        <h5 class="card-title">Toyota Hilux / 2010</h5>
+                        <h6 class="card-subtitle mb-2 text-success">Precio: $6,599</h6>
+                        <p class="card-text">
+                            Some quick example text to build on the card title and make up
+                            the bulk of the card's content.
+                        </p>
+                        <div class="container">
+                            <div class="row g-2">
+                                <div class="col">
+                                    <a class="btn btn-primary w-100 d-flex justify-content-center"
+                                        href="/sections/car-details/car-details.html?brand=toyota&model=hilux&year=2010"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" style="margin-top: 6px; margin-right: 6px"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                            <path
+                                                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4" />
+                                        </svg><span>Ver</span></a>
+                                </div>
+                                <div class="col">
+                                    <button
+                                        class="btn btn-secondary w-100 d-flex justify-content-center saveCar-button">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" viewBox="0 0 16 16"
+                                            style="margin-top: 6px; margin-right: 10px">
+                                            <path
+                                                d="M7.84 4.1a.178.178 0 0 1 .32 0l.634 1.285a.18.18 0 0 0 .134.098l1.42.206c.145.021.204.2.098.303L9.42 6.993a.18.18 0 0 0-.051.158l.242 1.414a.178.178 0 0 1-.258.187l-1.27-.668a.18.18 0 0 0-.165 0l-1.27.668a.178.178 0 0 1-.257-.187l.242-1.414a.18.18 0 0 0-.05-.158l-1.03-1.001a.178.178 0 0 1 .098-.303l1.42-.206a.18.18 0 0 0 .134-.098z" />
+                                            <path
+                                                d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z" />
+                                        </svg><span>Guardar</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 d-flex justify-content-center">
+                <div class="card featured-announcement-card border border-black" style="width: 20rem">
+                    <img src="/public/imgs/cars-photos-db/hyundai/accent/accent-bg.jpg" class="card-img-top img-fluid"
+                        alt="..." />
+                    <div class="card-body d-flex flex-column justify-content-around">
+                        <h5 class="card-title">Hyundai Accent / 2011</h5>
+                        <h6 class="card-subtitle mb-2 text-success">Precio: $6,599</h6>
+                        <p class="card-text">
+                            Some quick example text to build on the card title and make up
+                            the bulk of the card's content.
+                        </p>
+                        <div class="container">
+                            <div class="row g-2">
+                                <div class="col">
+                                    <a class="btn btn-primary w-100 d-flex justify-content-center"
+                                        href="/sections/car-details/car-details.html?brand=hyundai&model=accent&year=2011"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" style="margin-top: 6px; margin-right: 10px"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                            <path
+                                                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4" />
+                                        </svg><span>Ver</span></a>
+                                </div>
+                                <div class="col">
+                                    <button
+                                        class="btn btn-secondary w-100 d-flex justify-content-center saveCar-button">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" viewBox="0 0 16 16"
+                                            style="margin-top: 6px; margin-right: 10px">
+                                            <path
+                                                d="M7.84 4.1a.178.178 0 0 1 .32 0l.634 1.285a.18.18 0 0 0 .134.098l1.42.206c.145.021.204.2.098.303L9.42 6.993a.18.18 0 0 0-.051.158l.242 1.414a.178.178 0 0 1-.258.187l-1.27-.668a.18.18 0 0 0-.165 0l-1.27.668a.178.178 0 0 1-.257-.187l.242-1.414a.18.18 0 0 0-.05-.158l-1.03-1.001a.178.178 0 0 1 .098-.303l1.42-.206a.18.18 0 0 0 .134-.098z" />
+                                            <path
+                                                d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z" />
+                                        </svg><span>Guardar</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 d-flex justify-content-center">
+                <div class="card featured-announcement-card border border-black" style="width: 20rem">
+                    <img src="/public/imgs/cars-photos-db/toyota/corolla/corolla-bg.jpg" class="card-img-top img-fluid"
+                        alt="..." />
+                    <div class="card-body d-flex flex-column justify-content-around">
+                        <h5 class="card-title">Toyota Corolla / 2012</h5>
+                        <h6 class="card-subtitle mb-2 text-success">Precio: $6,599</h6>
+                        <p class="card-text">
+                            Some quick example text to build on the card title and make up
+                            the bulk of the card's content.
+                        </p>
+                        <div class="container">
+                            <div class="row g-2">
+                                <div class="col">
+                                    <a class="btn btn-primary w-100 d-flex justify-content-center"
+                                        href="/sections/car-details/car-details.html?brand=toyota&model=corolla&year=2012"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" style="margin-top: 6px; margin-right: 10px"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                            <path
+                                                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4" />
+                                        </svg><span>Ver</span></a>
+                                </div>
+                                <div class="col">
+                                    <button
+                                        class="btn btn-secondary w-100 d-flex justify-content-center saveCar-button">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" viewBox="0 0 16 16"
+                                            style="margin-top: 6px; margin-right: 10px">
+                                            <path
+                                                d="M7.84 4.1a.178.178 0 0 1 .32 0l.634 1.285a.18.18 0 0 0 .134.098l1.42.206c.145.021.204.2.098.303L9.42 6.993a.18.18 0 0 0-.051.158l.242 1.414a.178.178 0 0 1-.258.187l-1.27-.668a.18.18 0 0 0-.165 0l-1.27.668a.178.178 0 0 1-.257-.187l.242-1.414a.18.18 0 0 0-.05-.158l-1.03-1.001a.178.178 0 0 1 .098-.303l1.42-.206a.18.18 0 0 0 .134-.098z" />
+                                            <path
+                                                d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z" />
+                                        </svg><span>Guardar</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 d-flex justify-content-center">
+                <div class="card featured-announcement-card border border-black" style="width: 20rem">
+                    <img src="/public/imgs/cars-photos-db/nissan/frontier/frontier-bg.jpg"
+                        class="card-img-top img-fluid" alt="Nissan Frontrier" />
+                    <div class="card-body d-flex flex-column justify-content-around">
+                        <h5 class="card-title">Nissan Frontier / 2006</h5>
+                        <h6 class="card-subtitle mb-2 text-success">Precio: $6,599</h6>
+                        <p class="card-text">
+                            Some quick example text to build on the card title and make up
+                            the bulk of the card's content.
+                        </p>
+                        <div class="container">
+                            <div class="row g-2">
+                                <div class="col">
+                                    <a class="btn btn-primary w-100 d-flex justify-content-center"
+                                        href="/sections/car-details/car-details.html?brand=nissan&model=frontier&year=2006"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" style="margin-top: 6px; margin-right: 10px"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                            <path
+                                                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4" />
+                                        </svg><span>Ver</span></a>
+                                </div>
+                                <div class="col">
+                                    <button
+                                        class="btn btn-secondary w-100 d-flex justify-content-center saveCar-button">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" viewBox="0 0 16 16"
+                                            style="margin-top: 6px; margin-right: 10px">
+                                            <path
+                                                d="M7.84 4.1a.178.178 0 0 1 .32 0l.634 1.285a.18.18 0 0 0 .134.098l1.42.206c.145.021.204.2.098.303L9.42 6.993a.18.18 0 0 0-.051.158l.242 1.414a.178.178 0 0 1-.258.187l-1.27-.668a.18.18 0 0 0-.165 0l-1.27.668a.178.178 0 0 1-.257-.187l.242-1.414a.18.18 0 0 0-.05-.158l-1.03-1.001a.178.178 0 0 1 .098-.303l1.42-.206a.18.18 0 0 0 .134-.098z" />
+                                            <path
+                                                d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z" />
+                                        </svg><span>Guardar</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 d-flex justify-content-center">
+                <div class="card featured-announcement-card border border-black" style="width: 20rem">
+                    <img src="/public/imgs/cars-photos-db/nissan/versa/versa-1.jpg" class="card-img-top img-fluid"
+                        alt="Nissan Versa" />
+                    <div class="card-body d-flex flex-column justify-content-around">
+                        <h5 class="card-title">Nissan Versa / 2009</h5>
+                        <h6 class="card-subtitle mb-2 text-success">Precio: $6,599</h6>
+                        <p class="card-text">
+                            Some quick example text to build on the card title and make up
+                            the bulk of the card's content.
+                        </p>
+                        <div class="container">
+                            <div class="row g-2">
+                                <div class="col">
+                                    <a class="btn btn-primary w-100 d-flex justify-content-center"
+                                        href="/sections/car-details/car-details.html?brand=nissan&model=versa&year=2009"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" style="margin-top: 6px; margin-right: 10px"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                            <path
+                                                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4" />
+                                        </svg><span>Ver</span></a>
+                                </div>
+                                <div class="col">
+                                    <button
+                                        class="btn btn-secondary w-100 d-flex justify-content-center saveCar-button">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" viewBox="0 0 16 16"
+                                            style="margin-top: 6px; margin-right: 10px">
+                                            <path
+                                                d="M7.84 4.1a.178.178 0 0 1 .32 0l.634 1.285a.18.18 0 0 0 .134.098l1.42.206c.145.021.204.2.098.303L9.42 6.993a.18.18 0 0 0-.051.158l.242 1.414a.178.178 0 0 1-.258.187l-1.27-.668a.18.18 0 0 0-.165 0l-1.27.668a.178.178 0 0 1-.257-.187l.242-1.414a.18.18 0 0 0-.05-.158l-1.03-1.001a.178.178 0 0 1 .098-.303l1.42-.206a.18.18 0 0 0 .134-.098z" />
+                                            <path
+                                                d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z" />
+                                        </svg><span>Guardar</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-dark">
+        <div class="container py-5">
+            <div class="row search-cars_brand-text py-4">
+                <div>
+                    <span class="h3 fw-bolder" style="color: #edeeff">Conocemos el mercado</span>
+                </div>
+                <div class="col-12 col-lg-6 text-white">
+                    <div>
+                        <p>
+                            En <strong>Auto Mundo</strong>, entendemos que el mercado de
+                            automóviles es dinámico y diverso, y nos enorgullece decir que
+                            lo conocemos profundamente. Con años de experiencia en la
+                            industria automotriz, hemos perfeccionado nuestro conocimiento
+                            sobre las tendencias, las necesidades cambiantes y las
+                            expectativas de nuestros clientes.
+                        </p>
+                        <p>
+                            Nos preocupamos profundamente por nuestros clientes, y esta
+                            preocupación impulsa todo lo que hacemos. Desde la selección de
+                            vehículos de alta calidad hasta la atención personalizada que
+                            ofrecemos en cada interacción, estamos comprometidos a brindar
+                            una experiencia excepcional a todos y cada uno de nuestros
+                            clientes.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 d-flex justify-content-center flex-wrap">
+                    <img src="/public/imgs/cars-photos-db/toyota/hilux/hilux-1.jpg" alt="versa" class="img-fluid" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row py-4 g-4">
+            <div class="col">
+                <div class="">
+                    <span class="h3 text-uppercase" style="color: #00117f">Productos especializados para cada tipo de
+                        uso</span>
+                    <p class="h4 pt-2 fw-light">
+                        Cada modelo que ofrecemos está cuidadosamente seleccionado para
+                        proporcionar soluciones a una amplia gama de actividades y
+                        públicos objetivos. Desde vehículos diseñados para el trabajo duro
+                        hasta opciones ideales para el paseo y la conducción diaria, en
+                        Auto Mundo tenemos algo para cada tipo de conductor.
+                    </p>
+                    <p class="fst-italic fs-5">- "Auto Mundo, tu mejor solución"</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>Marca</th>
+                                <th>Modelo</th>
+                                <th>Tipo de Actividad</th>
+                                <th>Público Objetivo</th>
+                                <th>Presupuesto</th>
+                                <th>Porcentaje de Fallas</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Toyota</td>
+                                <td>Hilux</td>
+                                <td>Trabajo</td>
+                                <td>Empresas y Trabajadores Rurales</td>
+                                <td><span class="badge bg-danger">Alto</span></td>
+                                <td>10%</td>
+                            </tr>
+                            <tr>
+                                <td>Toyota</td>
+                                <td>Corolla</td>
+                                <td>Paseo</td>
+                                <td>Familias y Conductores Urbanos</td>
+                                <td><span class="badge bg-success">Medio</span></td>
+                                <td>5%</td>
+                            </tr>
+                            <tr>
+                                <td>Hyundai</td>
+                                <td>Accent</td>
+                                <td>Diario</td>
+                                <td>Conductores Urbanos</td>
+                                <td><span class="badge bg-warning">Bajo</span></td>
+                                <td>8%</td>
+                            </tr>
+                            <tr>
+                                <td>Mitsubishi</td>
+                                <td>L200</td>
+                                <td>Carga</td>
+                                <td>Empresas y Trabajadores de la Construcción</td>
+                                <td><span class="badge bg-success">Medio</span></td>
+                                <td>12%</td>
+                            </tr>
+                            <tr>
+                                <td>Honda</td>
+                                <td>Civic</td>
+                                <td>Paseo</td>
+                                <td>Conductores Urbanos y Jóvenes Profesionales</td>
+                                <td><span class="badge bg-danger">Alto</span></td>
+                                <td>7%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+        <div id="liveToast" class="toast bg-success text-white border-0" role="alert" aria-live="assertive"
+            aria-atomic="true">
+            <div class="toast-body d-flex justify-content-center">
+                <span class="fs-4">Guardado en Favoritos.</span>
+            </div>
+        </div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>

@@ -7,34 +7,148 @@
     <link rel="shortcut icon" href="/public/imgs/bootstrap-logo.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>Contáctanos</title>
+    <link rel="stylesheet" href="/public/styles/style.css">
+    <title>Buscar Autos</title>
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+    <link rel="stylesheet" type="text/css" href="/public/styles/contact-us/contact-us.css" />
+    <script type="module" src="/public/js/contact-us/contactUs.js"></script>
+
 </head>
 
-<body>
+<body class=" bg-light ">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
-                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                <a class="navbar-brand" href="/index.html">Auto Mundo</a>
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page"
-                            href="/sections/search-cars/search-cars.html">Buscar Autos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/sections/contact-us/contact-us.html">Contáctanos</a>
-                    </li>
-                </ul>
+    <nav class="navbar navbar-expand-lg navbar-light bg-custom ">
+        <div class="container-fluid justify-content-start ">
+            <div class="col">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarToggleComponent" aria-controls="navbarToggleComponent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navbar el contenido solo se muestra cuando la pantalla es grande mayor igual que LG-->
+                <div class="d-none d-lg-flex">
+                    <a class="navbar-brand" href="/index.html">Auto Mundo</a>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page"
+                                href="/sections/search-cars/search-cars.html">Buscar Autos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/sections/contact-us/contact-us.html">Contáctanos</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Navbar el contenido solo se muestra cuando son dispositos pequeños menores que LG -->
+                <div class="d-block d-lg-none pt-2">
+                    <div class="collapse " id="navbarToggleComponent">
+                        <a class="navbar-brand" href="/index.html">Auto Mundo</a>
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page"
+                                    href="/sections/search-cars/search-cars.html">Buscar Autos</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="/sections/contact-us/contact-us.html">Contáctanos</a>
+                            </li>
+                            <div class="py-2 border-bottom">
+                                <span type="span"
+                                    class="position-relative bg-dark bg-gradient  rounded-2 text-white p-1 ">
+                                    Notificaciones
+                                    <span class="badge bg-danger">4</span>
+                                </span>
+                            </div>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Configuración</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/index.html">Cerrar sesión</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Columna con informacion del perfil del usuario -->
+            <div class="col-3 d-none d-lg-block pt-3">
+                <div class="row ">
+                    <div class="col">
+                        <span type="span" class="btn btn-primary position-relative">
+                            Notificaciones
+                            <span
+                                class="position-absolute top-0 start-90 translate-middle badge rounded-pill bg-danger">
+                                5+
+                                <span class="visually-hidden">solicitudes de compra sin leer</span>
+                            </span>
+                        </span>
+                    </div>
+                    <div class="col">
+                        <div>
+                            <div class="dropdown">
+                                <img src="/public/imgs/profile.jpg"
+                                    class="border  border-3 rounded-circle cursor-pointer dropdown "
+                                    id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"
+                                    alt="profile phote" width="45" height="45">
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#">Configuración</a></li>
+                                    <li><a class="dropdown-item" href="/index.html">Cerrar sesión</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+        </div>
     </nav>
+    <div class="container-fluid">
+        <div class="row px-5 py-4">
+            <h2>Contactanos</h2>
+            <p>Estamos ubicados en Calle a Plan del Pino Km 1 1/2. Ciudadela Don Bosco, Soyapango, El Salvador.</p>
+            <p>Síguenos en nuestras redes sociales:</p>
+            <div class="d-flex">
+                <span class="me-3"><a href="#" class="btn btn-primary">Facebook</a></span>
+                <span class="me-3"><a href="#" class="btn btn-primary">Twitter</a></span>
+                <span><a href="#" class="btn btn-primary">Instagram</a></span>
+            </div>
+        </div>
+        <div class="row px-0 ">
+            <div class="col-12 col-md-8 ps-5 pe-5 pe-md-0 py-5  bg-dark ">
+                <div class="w-100 border-dark " id="map"></div>
+            </div>
+
+            <div class="col-12 col-md-4 px-4 px-md-0 py-2 pe-4 pe-md-2 bg-dark ">
+                <div class="w-100 h-100 bg-white p-5">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Correo electrónico</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="automundo@automundo.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+    <!-- prettier-ignore -->
+    <script>(g => { var h, a, k, p = "The Google Maps JavaScript API", c = "google", l = "importLibrary", q = "__ib__", m = document, b = window; b = b[c] || (b[c] = {}); var d = b.maps || (b.maps = {}), r = new Set, e = new URLSearchParams, u = () => h || (h = new Promise(async (f, n) => { await (a = m.createElement("script")); e.set("libraries", [...r] + ""); for (k in g) e.set(k.replace(/[A-Z]/g, t => "_" + t[0].toLowerCase()), g[k]); e.set("callback", c + ".maps." + q); a.src = `https://maps.${c}apis.com/maps/api/js?` + e; d[q] = f; a.onerror = () => h = n(Error(p + " could not load.")); a.nonce = m.querySelector("script[nonce]")?.nonce || ""; m.head.append(a) })); d[l] ? console.warn(p + " only loads once. Ignoring:", g) : d[l] = (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n)) })
+            ({ key: "AIzaSyAL6XvKJBPXa_wS04wU7R7uK_jnJOgdm9Q", v: "beta" });</script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"
+        defer></script>
+
+
 </body>
 
 </html>
