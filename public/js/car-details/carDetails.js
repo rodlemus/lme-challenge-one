@@ -74,7 +74,7 @@ const brandsData = {
     civic: {
       photos: [
         "/public/imgs/cars-photos-db/honda/civic/civic-0.jpg",
-        "/public/imgs/cars-photos-db/honda/civic/civic-1.jpg",
+        "/public/imgs/cars-photos-db/honda/civic/civic-bg.png",
         "/public/imgs/cars-photos-db/honda/civic/civic-2.jpg",
         "/public/imgs/cars-photos-db/honda/civic/civic-3.jpg",
       ],
@@ -192,7 +192,6 @@ const generateCarouselIndicatorElement = (indicatorIndex, isFirstIndicator) => {
 };
 
 carouselSources.forEach((imgSrc, index) => {
-  console.log(index);
   const carouselIndicatorsItem = generateCarouselIndicatorElement(
     index,
     index === 0
@@ -213,3 +212,13 @@ const viewsNumber = randomNumber(120, 429);
 const viewsTitle = `(Vistas ${viewsNumber})`;
 
 document.getElementById("viewsTitle").textContent = viewsTitle;
+
+//Comrar Modal
+const shopCarButtonElement = document.getElementById("shopCarButton");
+const shopCarModal = new bootstrap.Modal(
+  document.getElementById("cardBuyedModal")
+);
+
+shopCarButtonElement.addEventListener("click", () => {
+  shopCarModal.show();
+});
