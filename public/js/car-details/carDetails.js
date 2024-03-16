@@ -41,7 +41,7 @@ const brandsData = {
       photos: [
         "/public/imgs/cars-photos-db/nissan/frontier/frontier-0.jpg",
         "/public/imgs/cars-photos-db/nissan/frontier/frontier-1.jpg",
-        "/public/imgs/cars-photos-db/nissan/frontier/frontier-2.jpg",
+        "/public/imgs/cars-photos-db/nissan/frontier/frontier-bg.jpg",
         "/public/imgs/cars-photos-db/nissan/frontier/frontier-3.jpg",
       ],
       description:
@@ -64,7 +64,7 @@ const brandsData = {
         "/public/imgs/cars-photos-db/hyundai/accent/accent-0.jpg",
         "/public/imgs/cars-photos-db/hyundai/accent/accent-1.jpg",
         "/public/imgs/cars-photos-db/hyundai/accent/accent-2.jpg",
-        "/public/imgs/cars-photos-db/hyundai/accent/accent-3.jpg",
+        "/public/imgs/cars-photos-db/hyundai/accent/accent-bg.jpg",
       ],
       description:
         "El Hyundai Accent es un automóvil subcompacto que ofrece un excelente valor por su precio. Es conocido por su economía de combustible, manejo ágil y amplio espacio interior, lo que lo convierte en una opción popular para conductores que buscan un vehículo práctico y económico.",
@@ -105,7 +105,7 @@ const brandsData = {
     },
     ecoSport: {
       photos: [
-        "/public/imgs/cars-photos-db/ford/ecosport/ecosport-0.jpg",
+        "/public/imgs/cars-photos-db/ford/ecosport/ecosport-0.png",
         "/public/imgs/cars-photos-db/ford/ecosport/ecosport-1.jpg",
         "/public/imgs/cars-photos-db/ford/ecosport/ecosport-2.jpg",
         "/public/imgs/cars-photos-db/ford/ecosport/ecosport-3.jpg",
